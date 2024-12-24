@@ -1,26 +1,21 @@
-/*
-let weather=prompt("enter the weather");
-if(weather==="rainy"){
-    console.log("take an umbrella with you")
-}else if(weather==="snowy"){
-    console.log("wear a jacket to stay warm")
-}else(console.log("enjoy your day"));
-*/
+let number = prompt("Enter the gained numbers");
 
-
-var velocity= +prompt("enter velocity")
-if(velocity < 0){
-    console.log("Invalid velocity.... try again");
-}else if(velocity < 10 && velocity >= 0){
-    console.log("Stationary");
-}else if(velocity >= 10 && velocity <= 30){
-    console.log("max speed driving");
-}else if(velocity > 30 && velocity <= 60){
-    console.log("slow driving");
-}else if(velocity > 60 && velocity <= 100){
-    console.log("fast driving");
-}else if(velocity > 100 && velocity <= 200){
-    console.log("maximum velocity");
-}else{
-    console.log("invalid answer.... try again");
+switch (true) {
+    case (number >= 80 && number <= 100):
+        console.log("A+");
+        break;
+    case (number >= 70 && number <= 79):
+        console.log("B+");
+        break;
+    case (number >= 60 && number <= 69):
+        console.log("C+");
+        break;
+    case (number >= 50 && number <= 59):
+        console.log("Mar mar ka pass");
+        break;
+    case (number >= 1 && number <= 49):
+        console.log("Fail");
+        break;
+    default:
+        console.log("You have entered the wrong number??");
 }
