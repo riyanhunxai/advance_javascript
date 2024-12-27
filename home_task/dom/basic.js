@@ -1,0 +1,40 @@
+let getELementByIdExample = document.getElementById("main_id");
+console.log(getELementByIdExample);
+// innerHTML innerText
+getELementByIdExample.innerHTML = "welcome to js class!"
+getELementByIdExample.innerText = "welcome"
+
+// creating element
+
+let h2 = document.createElement("h2")
+h2.innerText = " DOM";
+// APPENDChild
+getELementByIdExample.appendChild(h2)
+
+// setAttribute
+h2.setAttribute("class","para")
+console.log(h2);
+
+// styling 
+h2.style.fontSize = "30px";
+
+h2.classList= "heading_h2";
+
+// events
+
+
+getELementByIdExample.addEventListener("click", (event)=>{
+    console.log(event);
+})
+function addClass() {
+    let color = document.getElementById("main_div");
+    color.classList.add("change_color")
+}
+
+const button = document.getElementById('ClickMe');
+
+// Add a click event listener to the button
+button.addEventListener('click', () => {
+  // Change the background color of the button
+  button.style.backgroundColor = getRandomColor();
+});
