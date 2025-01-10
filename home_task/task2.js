@@ -22,8 +22,13 @@ class ExtendedFamily extends Family {
 
 let family1 = new Family("Saima", "Akhtar");  //details pass kiya ha
 let family2 = new ExtendedFamily("Riyan", "Hunxai", 20);
-let family3 = new ExtendedFamily("hamza", "Khan", 25);
+let family3 = new ExtendedFamily("sameer", "sha", 25);
 
 console.log(family1.introduction());
 console.log(family2.getDetail());
 console.log(family3.getDetail()); 
+
+
+
+
+/*object ke properties  ko inetialize keta ha*/
